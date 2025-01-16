@@ -1,14 +1,12 @@
 import mysql.connector
 from mysql.connector import Error
-
 def conectar():
     try:
-        # Substitua pelos dados do seu banco
         conexao = mysql.connector.connect(
-            host="localhost",       # Host do banco de dados
-            user="root",     # Usuário do banco
-            password="maikon123",   # Senha do banco
-            database="sistema_cursos"    # Nome do banco de dados
+            host="localhost",
+            user="root",
+            password="maikon123",
+            database="sistema_cursos"
         )
         if conexao.is_connected():
             return conexao
