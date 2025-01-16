@@ -1,8 +1,7 @@
-from tkinter import Tk
-from gui.interface import Interface
+import tkinter as tk
+from gui.login import LoginApp
 
-# Ponto de entrada
 if __name__ == "__main__":
-    root = Tk()
-    app = Interface(root)
+    root = tk.Tk()
+    app = LoginApp(root)
     root.mainloop()
