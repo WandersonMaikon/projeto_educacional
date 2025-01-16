@@ -7,8 +7,8 @@ class LoginApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Sistema de Login")
-        self.width = 300
-        self.height = 200
+        self.width = 600
+        self.height = 400
         self.screen_width = root.winfo_screenwidth()
         self.screen_height = root.winfo_screenheight()
         self.x = (self.screen_width - self.width) // 2
