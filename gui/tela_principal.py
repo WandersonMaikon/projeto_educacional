@@ -1,12 +1,11 @@
 import tkinter as tk
 from tkinter import messagebox
-from tela_professor import TelaProfessor
+from gui.tela_professor import TelaProfessor
 
 class TelaPrincipal:
-    def __init__(self, root, login_root, conexao_banco):
+    def __init__(self, root, login_root):
         self.root = root
         self.login_root = login_root
-        self.conexao_banco = conexao_banco  # Conexão com o MySQL
         self.root.title("Tela Principal")
         self.root.geometry("600x400")
 
@@ -47,10 +46,6 @@ class TelaPrincipal:
         # Configura a barra de menu
         self.root.config(menu=menu_bar)
 
-    def abrir_tela_cadastro_professor(self):
-        """Abre a tela de cadastro de professor."""
-        TelaProfessor(self.root, self.conexao_banco)
-
     def abrir_arquivo(self):
         """Ação para abrir um arquivo."""
         messagebox.showinfo("Abrir Arquivo", "Funcionalidade de Abrir Arquivo não implementada ainda.")
@@ -63,3 +58,7 @@ class TelaPrincipal:
         """Fecha a tela principal e retorna à tela de login."""
         self.root.destroy()
         self.login_root.deiconify()
+
+    def abrir_tela_cadastro_professor(self):
+        """Abre a tela de cadastro de professor."""
+        TelaProfessor(self.root)
