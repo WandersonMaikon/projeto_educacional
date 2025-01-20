@@ -11,3 +11,4 @@ class Professor:
     def __str__(self):
         cursos_str = ", ".join([curso.nome for curso in self.cursos]) if self.cursos else "Nenhum"
         return f"Professor: {self.nome} (Matrícula: {self.matricula})\nCursos: {cursos_str}"
+
