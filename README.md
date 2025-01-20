@@ -1,23 +1,23 @@
-Gerenciamento de Professores, Salas, Turmas e Disciplinas
+# 📚 Gerenciamento de Professores, Salas, Turmas e Disciplinas
 
-Descrição
+## 📝 Descrição
 
-Projeto para organização e gestão de professores, salas, turmas e disciplinas, facilitando o planejamento semanal.
+Este projeto tem como objetivo facilitar a organização e gestão de professores, salas, turmas e disciplinas, proporcionando um planejamento semanal eficiente.
 
-Tecnologias
+## 🛠️ Tecnologias Utilizadas
 
-Linguagem: Python 3.12
+🖥️ **Linguagem**: Python 3.12
 
-Modelagem: UML
+📐 **Modelagem**: UML
 
-Banco de Dados: MySQL
+💾 **Banco de Dados**: MySql
 
-Interface: tkinter
+🖼️ **Interface**: Tkinter 
 
-Funcionalidades
+## 🚀 Funcionalidades
 
-Cadastro de professores, salas e turmas
+✅ Cadastro de professores, salas e turmas
 
-Alocação semanal de professores
+✅ Alocação semanal de professores
 
-Relatórios de carga horária
+✅ Geração de relatórios de **carga horária**
